@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.page {
+  position: relative;
+  padding-bottom: 300px; }
+
+.page-header {
+  height: 100vh;
+  background: #cecece;
+  position: relative; }
+
+.page-body {
+  height: 150vh; }
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background: #cecece;
+  -webkit-transition: height 500ms ease;
+  -moz-transition: height 500ms ease;
+  transition: height 500ms ease; }
+  .page-footer.is-expanded {
+    height: 100vh; }
+
+.page-footer-link {
+  display: block;
+  height: 100%; }
+
+.background-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.is-hidden {
+  display: none; }
+
+.header {
+  height: 250px;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -300px;
+  font-size: 100px;
+  text-align: center; }
+
+.header-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 300ms ease, color 300ms ease 400ms;
+  -moz-transition: height 300ms ease, color 300ms ease 400ms;
+  transition: height 300ms ease, color 300ms ease 400ms; }
+  .header-mask span {
+    display: inline-block;
+    margin-top: 40px;
+    line-height: 1em;
+    border: 5px solid black;
+    padding: 20px; }
+
+.is-transitioned .header-mask {
+  height: 100%;
+  color: white; }
+  .is-transitioned .header-mask span {
+    border-color: white;
+    -webkit-transition: border-color 300ms ease 400ms;
+    -moz-transition: border-color 300ms ease 400ms;
+    transition: border-color 300ms ease 400ms; }
