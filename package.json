@@ -1,9 +1,11 @@
 {
-  "name": "header-footer-transition-test", 
+  "name": "header-footer-transition-test",
   "version": "0.0.1",
-  "description":"A TEST DUMMY",
+  "description": "A TEST DUMMY",
   "repository": "https://github.com/nvolungis/header-footer-transition-demo",
   "devDependencies": {
+    "broccoli": "^0.16.2",
+    "broccoli-cli": "^1.0.0",
     "broccoli-concat": "0.0.13",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-sass": "^0.6.5",
