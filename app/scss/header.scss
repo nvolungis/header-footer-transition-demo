@@ -1,0 +1,43 @@
+.header {
+  height: 250px;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -300px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.header-mask {
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 300ms ease, color 300ms ease 400ms;
+  -moz-transition: height 300ms ease, color 300ms ease 400ms;
+  transition: height 300ms ease, color 300ms ease 400ms;
+
+  span {
+    display: inline-block;
+    margin-top: 40px;
+    line-height: 1em;
+    border: 5px solid black;
+    padding: 20px;
+  }
+}
+
+.is-transitioned .header-mask {
+  height: 100%;
+  color: white;
+
+  span {
+    border-color: white;
+    -webkit-transition: border-color 300ms ease 400ms;
+    -moz-transition: border-color 300ms ease 400ms;
+    transition: border-color 300ms ease 400ms;
+  }
+}
