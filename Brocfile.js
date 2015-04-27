@@ -7,7 +7,6 @@ var compileSass = require('broccoli-sass'),
     appHtml;
 
 
-
 appStyles = compileSass(['app/scss'], 
   'app.scss', 
   '/assets/app.css'
